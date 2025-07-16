@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-
-router = DefaultRouter()
-
-app_name = 'app'
+from django.urls import path
+from .views import TelegramWebhookView
 
 urlpatterns = [
-    path('app/', include(router.urls)),
+    path('webhook/', TelegramWebhookView.as_view()),
 ]

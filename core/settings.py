@@ -6,7 +6,11 @@ SECRET_KEY = 'django-insecure-t9nnqt*#%&(vh769qp$q=u12b7kf_amk^r)hef6x71+7(ucceg
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'b0ecc47fdb5e.ngrok-free.app',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -86,6 +90,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+
+TELEGRAM_BOT_TOKEN = '7595525979:AAGZNEbStJLZxqvEX5kbcCOTDGA71BjuQhw'
 
 
 STATIC_URL = 'static/'
